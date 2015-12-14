@@ -1,4 +1,4 @@
-# gulp-angular-template
+# mgr-gulp-angular-template
 
 ## Installation
 
