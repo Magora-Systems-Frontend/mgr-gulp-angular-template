@@ -14,6 +14,10 @@ This template requires gulp ang bower
     
     $ npm i
     
+#### Technologies
+* jade for templates
+* stylus for css 
+
 
 #### The application includes
 
