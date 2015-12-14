@@ -32,3 +32,20 @@ This template requires gulp ang bower
     $ gulp build --env=production
     
     
+#### Multi applications
+If you need to make two applications are independent of the code, create a second folder. put into it "config.json"
+
+    $ mkdir secondApp 
+    $ copy application/config.json  secondApp/config.json
+    
+    $ gulp --config=secondApp
+    
+    
+#### Stage and production 
+If you need to make inquiries on the "stage" and "production" servers
+
+    $ gulp --server=staging.my.com --protocol=http
+    $ gulp --server=production.my.com --protocol=https
+    
+In your js code use {{SERVER}} and {{protocol}}
+    
