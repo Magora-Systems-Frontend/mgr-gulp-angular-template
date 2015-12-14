@@ -7,11 +7,8 @@
             /* vendors */
             'angular-loading-bar',
             'pascalprecht.translate',
-
             'ui.router',
-
             'ui.bootstrap',
-
             'ngResource'
 
         ])
@@ -36,7 +33,6 @@
         });
 
         $translateProvider.useSanitizeValueStrategy(null);
-
         $translateProvider.preferredLanguage('ru-RU');
 
     }
