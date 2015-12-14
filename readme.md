@@ -48,4 +48,9 @@ If you need to make inquiries on the "stage" and "production" servers
     $ gulp --server=production.my.com --protocol=https
     
 In your js code use {{SERVER}} and {{protocol}}
-    
+
+> defaults:
+>
+>    * SERVER = localhost:8090
+>    
+>    * protocol = http

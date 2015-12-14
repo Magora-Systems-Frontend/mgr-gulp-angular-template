@@ -8,7 +8,7 @@ var knownOptions = {
             env: 'dev',
             config: 'application',
             protocol: 'http://',
-            server: '192.168.1.63:8180'
+            server: 'localhost:8090'
         }
     },
     minimist = require('minimist');
@@ -16,7 +16,7 @@ var knownOptions = {
 
 options = minimist(process.argv.slice(2), knownOptions);
 
-console.info('HOST: ' + options.server);
+console.info('API HOST: ' + options.server);
 config = require('./' + options.config + '/config.json');
 
 if (options['env'] === 'production') {
