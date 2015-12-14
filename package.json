@@ -1,6 +1,6 @@
 {
-  "name": "BurnsOffroad",
-  "version": "0.1.0",
+  "name": "mgr-gulp-angular-template",
+  "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint ."
@@ -50,5 +50,5 @@
     "type": "",
     "url": ""
   },
-  "description": "Burns Offroad"
+  "description": ""
 }
