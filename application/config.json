@@ -1,0 +1,101 @@
+{
+  "public": "./application/public",
+  "isProduction": false,
+  "stylus": {
+    "src": [
+      "./application/src/**/*.styl"
+    ],
+    "dst": "css/application.css"
+  },
+  "vendorcss": {
+    "src": [
+      "bower_components/bootstrap/dist/css/bootstrap.min.css",
+      "bower_components/font-awesome/css/font-awesome.min.css",
+      "bower_components/angular-loading-bar/build/loading-bar.min.css"
+    ],
+    "dst": "css/vendor.css"
+  },
+  "vendorjs": {
+    "src": [
+      "bower_components/angular/angular.min.js",
+      "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+      "bower_components/angular-bootstrap/ui-bootstrap.min.js",
+      "bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
+      "bower_components/angular-resource/angular-resource.min.js",
+      "bower_components/angular-translate/angular-translate.min.js",
+      "bower_components/angular-translate-loader-url/angular-translate-loader-url.min.js",
+      "bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"
+    ],
+    "dst": "js/vendor.js"
+  },
+  "javascript": {
+    "src": [
+      "vendor/lb-services.js",
+      "./application/src/**/*.js",
+      "!/application/src/init.js"
+    ],
+    "dst": "js/application.js"
+  },
+  "templates": {
+    "params": {
+      "module": "application"
+    },
+    "src": [
+      "./application/src/**/*.jade",
+      "!application/src/layout.jade",
+      "!application/src/copyright.jade"
+    ],
+    "dst": "/js/"
+  },
+  "layout": {
+    "src": [
+      "./application/src/layout.jade"
+    ],
+    "dst": "index.html"
+  },
+  "fonts": {
+    "src": [
+      "./bower_components/font-awesome/fonts/*.*",
+      "./bower_components/bootstrap/fonts/*.*",
+      "./application/src/fonts/*.*"
+    ],
+    "dst": "/fonts"
+  },
+  "img": {
+    "src": [
+      "./application/src/images/*.*"
+    ],
+    "dst": "/assets/images"
+  },
+  "translate": {
+    "lang": {
+      "ru-RU": [
+        "./application/src/**/translate/**/ru-RU.json"
+      ],
+      "en-US": [
+        "./application/src/**/translate/**/en-US.json"
+      ]
+    },
+    "dst": "./application/public/translates"
+  },
+  "build": [
+    "stylus",
+    "javascript",
+    "templates",
+    "layout",
+    "img",
+    "fonts",
+    "vendorjs",
+    "vendorcss",
+    "translate"
+  ],
+  "webServer": {
+    "server": {
+      "livereload": true,
+      "host": "0.0.0.0",
+      "port": 8080,
+      "open": false,
+      "fallback": "index.html"
+    }
+  }
+}
