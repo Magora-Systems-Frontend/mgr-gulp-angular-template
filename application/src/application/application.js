@@ -7,13 +7,15 @@
             /* vendors */
             'angular-loading-bar',
             'pascalprecht.translate',
+
             'ui.router',
+
             'ui.bootstrap',
+
             'ngResource'
 
         ])
-        .config(config)
-        .run(run);
+        .config(config);
 
     function config(
         $stateProvider,
@@ -39,8 +41,5 @@
 
     }
 
-    function run($rootScope, $state, $user, amMoment) {
-
-    }
 
 })(angular);
